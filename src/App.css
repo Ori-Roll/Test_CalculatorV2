@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.body {
+margin:0;
+padding:0;
+}
+
+.calcBody{
+  width: 400px;
+  height: 700px;
+  background-color: #8393a3;
+  margin:50px 100px;
+  /*transform: skewX(-2deg); */
+  border-radius: 30px;
+  box-shadow: lightgray 10px 10px;
+  color: rgb(54, 54, 54);       
+}
+
+.numInterface{
+  border-radius: 30px;
+  height:60%;
+}
+
+.calcNumPad {
+/*  background-color:rgba(255, 255, 255, 0.233);*/
+  width: 80%;
+  /* background-clip: inherit; */
+  margin: 60% 10% 10%;
+  color: rgb(43, 43, 43);    
+  float: left; /* NO GOOD!!! DO IT DIFFERENTLY */
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  height:100%;
+  grid-gap: 10px;
+}
+
+.numberBtn {
+  background-color: rgb(229, 241, 241);
+  text-align: center;
+  /*padding: 40%;*/
+  border-radius: 10px;
+  border-width: 0px;
+  box-shadow: rgba(2, 2, 2, 0.212) 5px 5px;
+  font: bold 3rem roboto, arial;
+  color: rgb(143, 143, 143);
+  text-overflow: initial;
+  text-shadow: rgb(116, 112, 112) -1px -1px;
+  text-indent: 0em;
+}
+
+
+
+/*
+OLD STUFF
+---------
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+} */
