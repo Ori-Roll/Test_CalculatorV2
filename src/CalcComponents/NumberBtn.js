@@ -52,8 +52,12 @@ function btnClick(e, btnValue){
         break;
 
         default:
-            onScreenNum =((onScreenNum*10)+Number(btnValue));
-            console.log("DISPLAY: "+onScreenNum);
+            if ((onScreenNum*10) > 999 || (onScreenNum*10) < -999){
+                console.log("TOO BIG Or SMALL!");
+            } else {
+                onScreenNum =((onScreenNum*10)+Number(btnValue));
+                console.log("DISPLAY: "+onScreenNum);
+            }
         break;
     }
 };
