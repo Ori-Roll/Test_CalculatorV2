@@ -17,7 +17,7 @@ padding:0;
   height: 600px;
   background-color: #8393a3;
   margin:50px 100px;
-  /*transform: skewX(-2deg); */
+  transform: skew(-10deg, 4deg);
   border-radius: 30px;
   box-shadow: lightgray 10px 10px;
   color: rgb(54, 54, 54);
