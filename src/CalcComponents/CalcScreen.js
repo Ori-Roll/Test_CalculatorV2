@@ -1,8 +1,8 @@
 import React from "react";
 
-function CalcScreen() {
+function CalcScreen(props) {
    console.log("HAY");
-    return  <div className="calcScreen">0.00</div>
+    return  <div className="calcScreen">{props.numValue}</div>
 }
 
 

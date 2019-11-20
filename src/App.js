@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <CalcBody/>
+      <img src="https://wallpaperaccess.com/full/11831.jpg"/>
     </div>
   );
 }

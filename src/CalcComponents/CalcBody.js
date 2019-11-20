@@ -7,12 +7,15 @@ function CalcBody(){
     
     const [numOnScreen, setNumOnScreen] = useState("0.0");
 
+    function changeNumOnScreen(changeReason){
+        setNumOnScreen(changeReason);
+    };
     
     return(
         <div className="calcBody">
-            <CalcScreen/>
+            <CalcScreen numValue={numOnScreen}/>
             <div className="numInterface">
-                <CalcNumPad/>
+                <CalcNumPad changeNumOnScreen={changeNumOnScreen} />
             </div>
         </div>    
     );

@@ -1,7 +1,8 @@
 import React from "react";
 import NumberBtn from "./NumberBtn.js";
 
-function CalcNumPad(){
+function CalcNumPad(props){
+
     const calcBtnValues = [ 
         {btnValue:"1", btnPlace:9},
         {btnValue:"2", btnPlace:10},
@@ -22,7 +23,11 @@ function CalcNumPad(){
     ];
     
     const renderMe = () => {
-        return calcBtnValues.map((btnLabel, index)=>{ return <NumberBtn key={btnLabel.btnPlace} btnValue={btnLabel.btnValue} btnPlace={btnLabel.btnPlace}/>});
+        return calcBtnValues.map((btnLabel, index)=>{ return <NumberBtn 
+                                                                key={btnLabel.btnPlace} 
+                                                                btnValue={btnLabel.btnValue} 
+                                                                btnPlace={btnLabel.btnPlace} 
+                                                                changeNumOnScreen={props.changeNumOnScreen}/>});
     };
     return <div className="calcNumPad"> {renderMe()} </div>
     
