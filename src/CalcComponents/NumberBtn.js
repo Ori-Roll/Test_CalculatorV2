@@ -6,15 +6,19 @@ let onScreenNum = 0.0;
 function NumberBtn(props){
 
     function btnClick(e, btnValue){
-        console.log("It's-a-meee, "+btnValue+"."/* ,e */ , "target: "+e.target);
+        // console.log("It's-a-meee, "+btnValue+"."/* ,e */ , "target: "+e.target);
         props.changeNumOnScreen(btnValue);
     };
 
     return(
-        <button type="button" className="numberBtn" style={{order: props.btnPlace}} 
-                                                    onClick={(e) => {btnClick(e, props.btnValue)}}
-                                                    changeNumOnScreen = {props.changeNumOnScreen}
-                                                    >{props.btnValue}</button>
+        <button 
+            type="button" 
+            className="numberBtn" 
+            style={{order: props.btnPlace}} 
+            onClick={(e) => {btnClick(e, props.btnValue)}}
+        >
+            {props.btnValue}
+        </button>
     );
 
 };
