@@ -14,7 +14,7 @@ function CalcNumPad(props){
         {btnValue:"8", btnPlace:2},
         {btnValue:"9", btnPlace:3},
         {btnValue:"0", btnPlace:13},
-        {btnValue:".", btnPlace:14},
+        {btnValue:"C", btnPlace:14},
         {btnValue:"=", btnPlace:15},
         {btnValue:"+", btnPlace:4},
         {btnValue:"-", btnPlace:8},
@@ -27,7 +27,7 @@ function CalcNumPad(props){
                                                                 key={btnLabel.btnPlace} 
                                                                 btnValue={btnLabel.btnValue} 
                                                                 btnPlace={btnLabel.btnPlace} 
-                                                                changeNumOnScreen={props.changeNumOnScreen}/>});
+                                                                numPadClicked={props.numPadClicked}/>});
     };
     return <div className="calcNumPad"> {renderMe()} </div>
     

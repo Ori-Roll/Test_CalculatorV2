@@ -7,7 +7,7 @@ function NumberBtn(props){
 
     function btnClick(e, btnValue){
         // console.log("It's-a-meee, "+btnValue+"."/* ,e */ , "target: "+e.target);
-        props.changeNumOnScreen(btnValue);
+        props.numPadClicked(btnValue);
     };
 
     return(
