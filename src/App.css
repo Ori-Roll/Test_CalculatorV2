@@ -62,6 +62,22 @@ padding:0;
   font-family: "Orbitron";
 }
 
+.numberBtnDark {
+  background-color: rgb(48, 56, 56);
+  text-align: center;
+  /*padding: 40%;*/
+  border-radius: 10px;
+  border: solid 1px rgb(104, 112, 122);
+  box-shadow: rgba(36, 36, 36, 0.151) 5px 5px;
+  font: bold 3rem roboto, arial;
+  color: rgb(216, 224, 226);
+  text-overflow: initial;
+  text-shadow: rgb(116, 112, 112) -1px -1px;
+  text-indent: 0em;
+  font-family: "Orbitron";
+}
+
+
 .calcScreen{
   height: 100px;
   background-color: rgb(206, 206, 206);
