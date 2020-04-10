@@ -1,29 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import CalcBody from './CalcComponents/CalcBody.js';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import CalcBody from "./CalcComponents/CalcBody.js";
 
 const meta = {
-  title: "Calculator V.2",
-  author: "Ori"
-}
+	title: "Calculator V.2",
+	author: "Ori",
+};
 
 function App() {
-  return (
-    <div className="App">
-      <CalcBody/>
-      <img src="https://wallpaperaccess.com/full/11831.jpg"/>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<CalcBody />
+		</div>
+	);
 }
 
 export default App;
-
-
-
-
-
-
 
 /*
 OLD STUFF
